@@ -28,22 +28,17 @@ header {
 }
 
 
-nav{
+header nav{
 	display: flex;
-	height: 20vh;
-	justify-content: space-between;
-	align-items: center;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 header img {
 	max-height: 100%;
 	width: 90%;
-    padding-top: 2vh;
-    margin-left: 0.3em;
 }
-
-
-
 
 
 #flex-header{
@@ -52,10 +47,9 @@ header img {
     justify-content: space-between;
 }
 
-#flex-nav-items{
+header #flex-nav-items{
 	display: flex;
     margin-right: 20px;
-    width: 40%;
     padding-bottom: 3em;
     justify-content: space-around;
     align-items: center;

@@ -26,16 +26,15 @@ footer {
     width: 100%;
 	min-height: 20vh;
     font-family: "Montserrat";
-    background-image: url(../img/lines.jpg);
     background-size: cover;
 }
 
 
-nav{
-	display: flex;
-	height: 20vh;
-	justify-content: space-between;
-	align-items: center;
+footer nav{
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 footer img {
@@ -55,20 +54,21 @@ footer img {
 	display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 #flex-nav-items{
 	display: flex;
     margin-right: 20px;
     width: 24em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     justify-content: space-around;
     align-items: center;
 }
 
 #flex-nav-items a{
 	color: #FF9900;
-    font-size: 20px;
+    font-size: 0.7em;
     text-decoration: none;
     font-weight: 200;
 }
