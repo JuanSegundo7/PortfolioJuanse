@@ -64,3 +64,18 @@ header #flex-nav-items{
 #flex-nav-items li{
 	list-style: none;
 }
+
+/*************^^^MEDIA-QUERYS^^^*************/
+
+@media (min-width: 468px){
+    header #flex-nav-items {
+		font-size: 1.2em;
+    	justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 768px){}
+
+@media (min-width: 1000px){}
+
+@media (min-width: 2000px){}
