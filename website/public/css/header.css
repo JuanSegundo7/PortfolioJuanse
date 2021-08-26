@@ -67,12 +67,17 @@ header #flex-nav-items{
 
 /*************^^^MEDIA-QUERYS^^^*************/
 
-@media (min-width: 468px){
+
+@media (min-width: 468px) and (min-height: 700px){
     header #flex-nav-items {
+		margin-bottom: 2em;
 		font-size: 1.2em;
     	justify-content: space-evenly;
 	}
+	
 }
+
+
 
 @media (min-width: 768px){}
 

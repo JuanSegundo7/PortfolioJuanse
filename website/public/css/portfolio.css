@@ -146,6 +146,20 @@ main{
     }
 }
 
+@media (min-width: 468px) and (min-height: 700px){
+    #Juanse {
+    width: 14em;
+    height: 30vh;
+    }
+    #Juanse img {
+    margin-left: 0.8em;
+    }
+    .flex-trabajos img {
+        height: 31vh;
+    }
+
+}
+
 @media (min-width: 768px){
     #flex-main {
         flex-direction: row;
@@ -217,4 +231,17 @@ main{
     }
 }
 
-@media (min-width: 2000px){}
+@media (min-width: 1300px){
+    #Juanse {
+        height: 58vh;
+        width: 22em;
+    }
+    #Juanse img {
+        width: 22em;
+        height: 22em;
+        margin: 1em 0 2em 2em
+    }
+    #flex-main p {
+        font-size: 25px;
+    }
+}
