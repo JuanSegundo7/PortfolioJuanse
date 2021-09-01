@@ -28,22 +28,17 @@
                 <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="flex-trabajos"><img src="/img/TechnoStarter-preview.png"></a></figure>
             </article>
         </section>
-            <a name="MisRedes"></a>
-            <h3 class="titulo">Mis Redes<h3>
-            <section id="flex-redes">
-                <article>
-                    <a href="https://www.linkedin.com/in/juan-segundo-mart%C3%ADnez/"><i class="fab fa-linkedin fa-4x"></i></a>
-                </article>
-                <article>
-                    <a href="https://github.com/JuanSegundo7"><i class="fab fa-github-square fa-4x"></i></a>
-                </article>
-                <article>
-                    <a href="https://www.instagram.com/juanse_martinez7/"><i class="fab fa-instagram-square fa-4x"></i></a>
-                </article>
-                <article>
-                    <a href="/"><img id="heroku" src="https://img.icons8.com/ios/50/000000/heroku.png"/></a>
-                </article>
-            </section>
+        <section>
+            <a name="Contacto"></a>
+            <h3 class="titulo">Contacatame</h3>
+            <form action="https://formspree.io/f/xrgrrpyd" method="POST">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre" id="nombre" placeholder="¿Cual es tu nombre y apellido?" class="form-style">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Dirección de correo electronico" class="form-style">
+                <label for="texto">Su Mensaje</label>
+                <textarea cols="30" rows="20" name="texto" id="texto" placeholder="Hola! Me gustaria..." class="form-style"></textarea>
+            </form>
         </section>
     </main>
     <%- include("./partials/footer")%> 
