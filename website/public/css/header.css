@@ -21,16 +21,18 @@
 
 header {
 	display: flex;
+	position: fixed;
     flex-direction: column;
     width: 100%;
-	min-height: 20vh;
+	min-height: 10vh;
     background-image: url(../img/lines.jpg);
+	box-shadow: 0px 2px 3px 0px rgb(255 153 0 / 89%);
 }
 
 
 header nav{
 	display: flex;
-    height: 20vh;
+    height: 14vh;
     justify-content: space-between;
     align-items: stretch;
 }
@@ -50,16 +52,22 @@ header img {
 header #flex-nav-items{
 	display: flex;
     width: 95%;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     align-items: center;
     justify-content: flex-end;
 }
+
 #flex-nav-items a{
 	color: #FF9900;
     font-size: 10px;
     text-decoration: none;
     font-weight: 200;
     margin-right: 10px;
+	transition: color .5s;
+}
+
+#flex-nav-items a:hover{
+	color: #ff990067;
 }
 
 #flex-nav-items li{
@@ -70,9 +78,19 @@ header #flex-nav-items{
 
 
 @media (min-width: 468px){
+	header {
+		position: relative;
+		min-height: 15vh;
+		
+	}
+
+	header nav{
+		height: 15vh;
+	}
+
     header #flex-nav-items {
 		width: 70%;
-    	padding-bottom: 3em;
+    	padding-bottom: 1em;
     	align-items: center;
     	justify-content: flex-end;
 	}
@@ -83,6 +101,12 @@ header #flex-nav-items{
 	
 }
 
+@media (min-width: 468px) and (min-height: 1000px){
+    header #flex-nav-items {
+		padding-top: 1.5em;
+    	align-items: flex-start;
+	}
+}
 
 
 @media (min-width: 768px){}

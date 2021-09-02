@@ -82,6 +82,10 @@ main{
     margin-top: 0.7em;
 }
 
+#mobile-margin{
+    margin-top: 3.5em;
+}
+
 .flex-trabajos{
     display: flex;
     flex-direction: row;
@@ -97,13 +101,56 @@ main{
     border-radius: 15px;
 }
 
+/*************^^^SKILLS^^^*************/
+
+#Skills{
+    text-align: center;
+}
+
+.barra{
+    width: 15em;
+    height: 0.5em;
+    background-color: white;
+}
+
+.barra-relleno{
+    width: 7em;
+    height: 0.5em;
+    background-color: #FF9900;
+}
+
+.flex-barras{   
+    display: flex;
+    margin: 1em 0.8em 1em 0.8em; 
+}
+
+#flex-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow-down{
+    margin-left: 1em;
+}
+
+#arrow-down::after{
+    font-size: 5em;
+}
+
+.hidden-info{
+    display: none
+}
+
 /*************^^^FORMULARIO^^^*************/
 
 textarea:focus, input:focus{
     outline: none;
 }
 
-
+::placeholder{
+    color: white;
+}
 
 form{
     display: flex;
@@ -121,21 +168,70 @@ form{
     padding: 1em;
     margin: 1em;
     width: 18em;
+    color: white;
 }
 
 #email{
     padding: 1em;
     margin: 1em;
     width: 18em;
+    color: white;
 }
 
 #texto{
     padding: 1em;
     margin: 1em;
+    color: white;
 }  
 
+#flex-botones{
+    display: flex;
+    
+}
 
+#flex-botones button{
+    color: whitesmoke;
+    background-color: #FF9900;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5em 1em;
+    margin: 0 0.6em;
+    transition: background-color .5s;
+}
 
+#flex-botones button:hover{
+    background-color: #ff990067;
+}
+
+fieldset{
+    border: none;
+}
+/*************^^^CONTACTO^^^*************/
+
+#contacto i{
+    color: #FF9900;
+    transition: color .5s;
+    margin: 0.2em;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+#contacto i:hover{
+    color: #ff990067;
+}
+
+#contacto p{
+    font-size: 0.8em;
+}
+
+#chupetin{
+    margin-left: 5px !important; 
+}
 
 /*************^^^MEDIA-QUERYS^^^*************/
 
@@ -154,22 +250,65 @@ form{
     #heroku {
         width: 4.2em;
     }
+    #mobile-margin{
+        margin: 1em;
+    }
 }
 
+/*************^^^WIDTH-FORM^^^*************/
+
+@media (min-width: 390px){
+    #nombre{
+        width: 26em;
+    }
+    #email{
+        width: 26em;
+    }
+    #texto{
+        width: 26em;
+    }
+    
+}
 /*************^^^MOBILE-1^^^*************/
 
-
-@media (min-width: 468px) and (max-height: 700px){
+@media (min-width: 468px){
     #Juanse {
     width: 14em;
-    height: 30vh;
+    height: 43vh;
     }
     #Juanse img {
-    margin-left: 0.8em;
+    margin-left: 0.4em;
     }
     .flex-trabajos img {
-        height: 31vh;
+        height: 45vh;
+        object-fit: cover;
     }
+    .flex-barras{
+        justify-content: center;
+    }
+    /*************^^^FORM^^^*************/
+    #nombre{
+        width: 18em;
+    }
+    #email{
+        width: 18em;
+    }
+    #texto{
+        width: 18em;
+    }
+    #contacto p{
+        font-size: 12px;
+        margin: 0.5em 0 0.5em 0;
+    }
+    #flex-contacto{
+        display: flex;
+        flex-direction: row;
+    }
+    /*************^^^FOOTER^^^*************/
+    #flex-redes{
+        width: 33% !important;
+    }
+
 }
 
 /*************^^^MOBILE-2^^^*************/
@@ -177,17 +316,21 @@ form{
 @media (min-width: 468px) and (min-height: 1000px){
     #Juanse {
     width: 14em;
-    height: 22vh;
+    height: 23vh;
     }
-    #Juanse img {
-    margin-left: 0.8em;
-    }
+
     .flex-trabajos img {
         height: 23vh;
     }
     section{
         margin: 1em 0 1em 0;
     }
+    
+   
+}
+
+@media (min-width: 650px){
+    
 }
 
 /*************^^^TABLET^^^*************/
@@ -221,6 +364,7 @@ form{
     .flex-trabajos img {
         width: 20em;
         height: 13em;
+        object-fit: initial;
     }
 }
 

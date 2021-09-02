@@ -7,7 +7,7 @@
     <%-include("./partials/header")%> 
     <main>
         <section>
-            <h3 class="titulo">¡Hola! ¿Como estás? Bienvenido a mí Portafolio, un gusto conocerte, me llamo Juan Segundo Martínez. Acá encontraras un poco de mí, mis redes y mis trabajos. ¡Empecemos!</h3>
+            <h3 class="titulo" id="mobile-margin">¡Hola! ¿Como estás? Bienvenido a mí Portafolio, un gusto conocerte, me llamo Juan Segundo Martínez. Acá encontraras un poco de mí, mis redes y mis trabajos. ¡Empecemos!</h3>
         </section>
         <a name="AcercaDe"></a>
         <section id="flex-main">
@@ -28,17 +28,58 @@
                 <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="flex-trabajos"><img src="/img/TechnoStarter-preview.png"></a></figure>
             </article>
         </section>
+        <section id="Skills">
+            <h3 class="titulo" id="flex-skills">Skills<i id="arrow-down" class="fas fa-chevron-down fa-sm"></i></h3>
+            <article class="hidden-info">
+                <p>HTML</p>
+                <article class="flex-barras">
+                    <div class="barra-relleno"></div>
+                    <div class="barra"></div>
+                </article>
+            </article>
+            <article class="hidden-info">
+                <p>CSS</p>
+                <article class="flex-barras">
+                    <div class="barra-relleno"></div>
+                    <div class="barra"></div>
+                </article>
+            </article>
+            <article class="hidden-info">
+                <p>JavaScript</p>
+                <article class="flex-barras">
+                    <div class="barra-relleno"></div>
+                    <div class="barra"></div>
+                </article>
+            </article>
+        </section>
         <section>
             <a name="Contacto"></a>
-            <h3 class="titulo">Contacatame</h3>
-            <form action="https://formspree.io/f/xrgrrpyd" method="POST">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="nombre" placeholder="¿Cual es tu nombre y apellido?" class="form-style">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Dirección de correo electronico" class="form-style">
-                <label for="texto">Su Mensaje</label>
-                <textarea cols="30" rows="20" name="texto" id="texto" placeholder="Hola! Me gustaria..." class="form-style"></textarea>
+            <h3 class="titulo">Contactame</h3>
+            <article id="flex-contacto">
+                <form action="https://formspree.io/f/xrgrrpyd" method="POST">
+                    <fieldset>
+                        <label for="nombre"></label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" class="form-style">
+                    </fieldset>
+                    <fieldset>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo electronico" class="form-style">
+                </fieldset>
+                <fieldset>
+                    <label for="texto"></label>
+                    <textarea cols="30" rows="20" name="texto" id="texto" placeholder="Hola! Me gustaria..." class="form-style"></textarea>
+                </fieldset>
+                <fieldset id="flex-botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetear</button>
+                </fieldset>
             </form>
+                <article id="contacto">
+                    <a href="http://wa.me/542213615252"><i class="fab fa-whatsapp-square fa-3x"></i></a>
+                    <p><i class="fas fa-map-pin fa-3x" id="chupetin"></i></a>La Plata, Buenos Aires AR</p>
+                    <p><i class="fas fa-inbox fa-3x"></i></a>juansegundomartinez7@gmail.com</p>
+                </article>
+            </article>
         </section>
     </main>
     <%- include("./partials/footer")%> 
