@@ -18,6 +18,7 @@ body{
     margin: 0px;
     padding: 0px;
     background: url(../img/lines.jpg);
+    background-size: auto;
     font-family: "Montserrat";
     min-width: 100vw;
     min-height: 100vh; 
@@ -83,7 +84,7 @@ main{
 }
 
 #mobile-margin{
-    margin-top: 3.5em;
+    margin-top: 4em;
 }
 
 .flex-trabajos{
@@ -105,6 +106,10 @@ main{
 
 #Skills{
     text-align: center;
+}
+
+#Skills i::backdrop{
+    transition:cubic-bezier(1, 0, 0, 1)
 }
 
 .barra{
@@ -167,14 +172,12 @@ form{
 #nombre{
     padding: 1em;
     margin: 1em;
-    width: 18em;
     color: white;
 }
 
 #email{
     padding: 1em;
     margin: 1em;
-    width: 18em;
     color: white;
 }
 
@@ -217,7 +220,7 @@ fieldset{
 #contacto{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -230,41 +233,20 @@ fieldset{
 }
 
 #chupetin{
-    margin-left: 5px !important; 
+    margin-left: 0.5em !important;
 }
 
+.flex-p-contacto{
+    display: flex;
+    align-items: center;
+}
 /*************^^^MEDIA-QUERYS^^^*************/
 
-@media (min-width: 468px){
-    #flex-main p {
-        width: 27em;
-        text-align: center;
-    }
-    .flex-trabajos img {
-        height: 42vh;
-        width: 25em;
-    }
-    .fa-4x {
-        font-size: 4.5em;
-    }
-    #heroku {
-        width: 4.2em;
-    }
-    #mobile-margin{
-        margin: 1em;
-    }
-}
 
 /*************^^^WIDTH-FORM^^^*************/
 
 @media (min-width: 390px){
-    #nombre{
-        width: 26em;
-    }
-    #email{
-        width: 26em;
-    }
-    #texto{
+    .form-medidas{
         width: 26em;
     }
     
@@ -281,57 +263,71 @@ fieldset{
     }
     .flex-trabajos img {
         height: 45vh;
-        object-fit: cover;
     }
     .flex-barras{
         justify-content: center;
     }
     /*************^^^FORM^^^*************/
-    #nombre{
-        width: 18em;
+    #flex-contacto{
+        display: flex;
+        flex-direction: column;
     }
-    #email{
-        width: 18em;
-    }
-    #texto{
-        width: 18em;
+    #contacto{
+        flex-direction: row;
+        margin: 2em 0;
+        padding: 0.4em;
     }
     #contacto p{
         font-size: 12px;
         margin: 0.5em 0 0.5em 0;
     }
-    #flex-contacto{
-        display: flex;
-        flex-direction: row;
+    .form-medidas{
+        width: 28em;
     }
+
+    .flex-trabajos img {
+        height: 42vh;
+        width: 25em;
+    }
+
+    #flex-main p {
+        width: 27em;
+        text-align: center;
+    }
+
+    .fa-4x {
+        font-size: 4.5em;
+    }
+    #heroku {
+        width: 4.2em;
+    }
+    #mobile-margin{
+        margin: 1em;
+    }
+
     /*************^^^FOOTER^^^*************/
     #flex-redes{
         width: 33% !important;
     }
+    .flex-p-contacto{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
 }
 
-/*************^^^MOBILE-2^^^*************/
-
-@media (min-width: 468px) and (min-height: 1000px){
-    #Juanse {
-    width: 14em;
-    height: 23vh;
+@media (min-width: 550px){
+    #contacto p {
+        font-size: 15px;
     }
-
-    .flex-trabajos img {
-        height: 23vh;
-    }
-    section{
-        margin: 1em 0 1em 0;
-    }
-    
-   
 }
 
 @media (min-width: 650px){
-    
+    #contacto p {
+        font-size: 18px;
+    }
 }
+
 
 /*************^^^TABLET^^^*************/
 
@@ -341,12 +337,13 @@ fieldset{
         justify-content: center;
     }
     #Juanse img {
-        width: 19em;
-        height: 18em;
+        width: 19em !important;
+        height: 18em !important;
+        margin: 0 !important;
     }
     #Juanse{
-        width: 16em;
-        height: 49vh;
+        width: 16em !important;
+        height: 17em !important;
     }
     #flex-main p {
         width: 22em;
@@ -366,11 +363,23 @@ fieldset{
         height: 13em;
         object-fit: initial;
     }
+    #flex-contacto {
+        flex-direction: row;
+    }
+    #contacto {
+        flex-direction: column;
+    }
+    #contacto p{
+        font-size: 15px;
+    }
+    .flex-p-contacto{
+        justify-content: flex-start;
+    }
 }
 
 /*************^^^TABLET^^^*************/
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
     #Juanse img {
         width: 19em;
         height: 18em;
@@ -379,7 +388,8 @@ fieldset{
         font-size: 18px;
     }
     #Juanse {
-        height: 52vh;
+        height: 18em !important;
+        width: 17em !important;
     }
     .flex-trabajos img {
         width: 23em;
@@ -391,6 +401,16 @@ fieldset{
         width: 4.5em;
         margin-top: 0.3em;
     }
+    #flex-main {
+        justify-content: space-evenly;
+    }   
+    
+    #flex-contacto {
+        justify-content: center;
+    }
+    #contacto {
+        width:40%;
+    }
 }
 
 /*************^^^DESKTOP^^^*************/
@@ -401,27 +421,87 @@ fieldset{
         font-size: 20px;
     }
     #Juanse {
-        height: 56vh;
+        height: 44vh;
         width: 18em;
     }
     #Juanse img {
         width: 19em;
-        margin-left: 1.3em;
         height: 18em;
     }
 }
 
 @media (min-width: 1300px){
     #Juanse {
-        height: 58vh;
-        width: 22em;
+        height: 23em !important;
+        width: 22em !important;
+        margin: 0 !important;
     }
     #Juanse img {
         width: 22em;
         height: 22em;
-        margin: 1em 0 2em 2em
+        margin: 1em 0 2em 1.5em !important;
     }
     #flex-main p {
         font-size: 25px;
     }
+    #flex-main{
+        justify-content: space-evenly;
+    }
+    .form-medidas {
+        width: 36em;
+    }
+    #flex-botones button{
+        width: 8em;
+        padding: 0.7em 1em;
+    }
+    .flex-trabajos img {
+        height: 32vh;
+    }
 }
+
+/*************^^^HEIGHT^^^*************/
+
+
+@media(min-height: 600px){
+    #Juanse {
+        width: 14em;
+        height: 40vh;
+    }
+}
+
+@media(min-height: 700px){
+    #Juanse{
+        height: 35vh;
+        margin: 0 0 0 0.2em;
+    }
+    #flex-main p{
+        margin: 1em 0 0 0;
+    }
+    .flex-trabajos img {
+        height: 42vh;
+    }
+    #flex-redes{
+        margin: 0 !important;
+    }
+}
+
+@media(min-height: 800px){
+    #Juanse {
+        height: 31vh;
+    }
+}
+
+@media (min-height: 1000px){
+    #Juanse {
+        width: 14em;
+        height: 23vh;
+    }
+    .flex-trabajos img {
+        height: 23vh;
+    }
+    section{
+        margin: 1em 0 1em 0;
+    }
+}
+
+

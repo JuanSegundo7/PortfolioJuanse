@@ -83,31 +83,36 @@ header #flex-nav-items{
 		min-height: 15vh;
 		
 	}
-
 	header nav{
 		height: 15vh;
 	}
-
     header #flex-nav-items {
 		width: 70%;
     	padding-bottom: 1em;
+		margin-right: 1em;
     	align-items: center;
     	justify-content: flex-end;
 	}
-
 	#flex-nav-items a{
 		font-size: 15px;
+	}
+	header img {
+		margin: 0.5em 0 0;
 	}
 	
 }
 
-@media (min-width: 468px) and (min-height: 1000px){
-    header #flex-nav-items {
-		padding-top: 1.5em;
-    	align-items: flex-start;
+@media(min-height: 700px){
+	header img {
+		margin: 1em 0 0;
 	}
 }
 
+@media(min-height: 900px){
+	header img {
+		margin: 1em 0 0;
+	}
+}
 
 @media (min-width: 768px){}
 
