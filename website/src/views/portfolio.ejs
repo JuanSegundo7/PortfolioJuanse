@@ -7,25 +7,64 @@
     <%-include("./partials/header")%> 
     <main>
         <section>
-            <h3 class="titulo" id="mobile-margin">¡Hola! ¿Como estás? Bienvenido a mí Portafolio, un gusto conocerte, me llamo Juan Segundo Martínez. Acá encontraras un poco de mí, mis redes y mis trabajos. ¡Empecemos!</h3>
+            <h3 class="titulo" id="mobile-margin">Juan Segundo Martínez</h3>
         </section>
         <a name="AcercaDe"></a>
         <section id="flex-main">
             <figure id="Juanse">
                 <img src="/img/Juanse-sinFondo.png" alt="">
             </figure>
-            <article>
-                <p>En 2020, realicé un curso introductorio sobre lenguaje HTML y CSS en Plataforma 5, mi idea era seguir capacitando me realizando algún curso Full-Stack, sin embargo llegó la pandemia y por un año (mas o menos) no realice avances. Sin embargo, en 2021, retome el camino realizando el curso de Full-Stack en Digital House. Mi meta es poder seguir mejorando y eventualmente participar en proyectos para seguir aumentando mis conocimientos y perfeccionarlos.</p>
+            <article id="full-stack">
+                <p class="box-p">Full Stack Developer</p>
+            </article>
+            <article class="hidden-p">
+                <article class="hidden-recuadro">
+                    <i class="fas fa-times-circle flex-cross"></i>
+                    <h1 class="flex-cross h1-cross">Mi Camino</h1>
+                    <p class="box-p">En 2020, realicé un curso introductorio sobre lenguaje HTML y CSS en Plataforma 5, mi idea era seguir capacitando me realizando algún curso Full-Stack, sin embargo llegó la pandemia y por un año (mas o menos) no realice avances. Sin embargo, en 2021, retome el camino realizando el curso de Full-Stack en Digital House. Mi meta es poder seguir mejorando y eventualmente participar en proyectos para seguir aumentando mis conocimientos y perfeccionarlos.</p>
+                </article>
             </article>
         </section>
         <section>
             <a name="MisProyectos"></a>
             <h3 class="titulo">Mis Proyectos</h3>
             <article id="misProyectos">
-                <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="flex-trabajos"><img src="/img/TechnoStarter-preview.png"></a></figure>
-                <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="flex-trabajos"><img src="/img/TechnoStarter-preview.png"></a></figure>
-                <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="flex-trabajos"><img src="/img/TechnoStarter-preview.png"></a></figure>
-                <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="flex-trabajos"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                <article class="flex-proyectos">
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="disabled-link"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                </article>
+                <article class="flex-proyectos">
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="disabled-link"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                </article>
+                <article class="flex-proyectos">
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="disabled-link"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                </article>
+                <article class="flex-proyectos">
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter" class="disabled-link"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                </article>
             </article>
         </section>
         <section id="Skills">
@@ -52,16 +91,24 @@
                 </article>
             </article>
         </section>
-        <section>
+        <section id="Contacto">
             <a name="Contacto"></a>
             <h3 class="titulo">Contactame</h3>
             <article id="flex-contacto">
                 <form action="https://formspree.io/f/xrgrrpyd" method="POST">
-                    <fieldset>
+                <fieldset class="input-icons">
                     <label for="nombre"></label>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" class="form-style form-medidas">
                 </fieldset>
-                <fieldset>
+                <fieldset class="input-icons">
+                    <label for="number"></label>
+                    <input type="number" name="number" id="number" placeholder="Telefono" class="form-style form-medidas">
+                </fieldset>
+                <fieldset class="input-icons">
+                    <label for="proyecto"></label>
+                    <input type="text" name="proyecto" id="proyecto" placeholder="Nombre del proyecto o Empresa" class="form-style form-medidas">
+                </fieldset>
+                <fieldset class="input-icons">
                     <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="Dirección de correo electronico" class="form-style form-medidas">
                 </fieldset>
@@ -74,14 +121,30 @@
                     <button type="reset">Resetear</button>
                 </fieldset>
             </form>
-                <article id="contacto">
-                    <a href="http://wa.me/542213615252"><i class="fab fa-whatsapp-square fa-3x flex-p-contacto"></i></a>
-                    <p class="flex-p-contacto"><i class="fas fa-map-pin fa-3x flex-p-contacto" id="chupetin"></i></a>La Plata, Buenos Aires AR</p>
-                    <p class="flex-p-contacto"><i class="fas fa-inbox fa-3x flex-p-contacto"></i></a>juansegundomartinez7@gmail.com</p>
+                <article id="contacto-icons">
+                    <a href="http://wa.me/542213615252" class="disabled-link"><i class="fab fa-whatsapp fa-3x  flex-p-contacto"></i></a>
+                    <i class="fas fa-map-pin fa-3x flex-p-contacto" ></i>        
+                    <article class="hidden-u">
+                        <article class="hidden-recuadro">
+                                <i class="fas fa-times-circle flex-cross cross-u"></i>
+                                <h1 class="flex-cross h1-cross">Ubicación</h1>
+                                <p class="box-p">La Plata, Buenos Aires. AR</p>
+                        </article>
+                    </article>               
+                    <i class="fas fa-inbox fa-3x flex-p-contacto" ></i>
+                    <article class="hidden-e">
+                        <article class="hidden-recuadro">
+                                <i class="fas fa-times-circle flex-cross cross-e"></i>
+                                <h1 class="flex-cross h1-cross">Email</h1>
+                                <p class="box-p">juansegundomartinez7@gmail.com</p>
+                        </article>
+                    </article>
                 </article>
             </article>
         </section>
     </main>
+    <%- include("./partials/scripts/juanse-info")%> 
+    <%- include("./partials/scripts/skills")%> 
     <%- include("./partials/footer")%> 
 </body>
 </html>

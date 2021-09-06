@@ -8,7 +8,16 @@
     Blanco: #FFFFFF 
 */
 
+/*****^^^A^^^*****/
+
+.disabled-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+} 
+
 /**************************************^^^BODY^^^********************************************/
+
 
 body{
     color: white;
@@ -18,7 +27,7 @@ body{
     margin: 0px;
     padding: 0px;
     background: url(../img/lines.jpg);
-    background-size: auto;
+    background-size: contain;
     font-family: "Montserrat";
     min-width: 100vw;
     min-height: 100vh; 
@@ -40,17 +49,21 @@ main{
     background-size: cover;
     background-blend-mode: difference;
     border-radius: 100%;
-    width: 14em;
-    height: 43vh;
+    cursor: pointer;
+    width: 47vh;
+    height: 46vh;
     padding: 0 0 2em 0.7em;
     overflow: hidden;
     margin: 1em 3em 1em;
 }
 
 #Juanse img{
-    width: 15em;
-    height: 15em;
+    max-width: 114%;
+    max-height: 120%;
+    width: 50vh;
+    height: 46vh;
 }
+
 
 
 #flex-main{
@@ -58,17 +71,81 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background: linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/lines.jpg);
+    background-blend-mode: overlay;
+    box-shadow: -2px -1px 13px 4px rgb(255 153 0 / 75%);
+    background-size: cover;
     padding: 1em;
 }
 
-#flex-main p{
+
+
+
+#full-stack p{
+    font-size: 1.2em !important;
+}
+
+.hidden-p{
+    display: none;
+}
+.hidden-u{
+    display: none;
+}
+.hidden-e{
+    display: none;
+}
+
+.recuadro-p{
+    display: flex;
+    flex-direction:column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    padding: 1em !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+    background-color: rgba(0,0,0,.5);
+}
+
+.flex-cross{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
     color: #FF9900;
-    font-size: 1em;
+    
+}
+
+.h1-cross{
+    font-size: 2em;
+    color: #FF9900;
+    justify-content: center !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-times-circle{
+    cursor: pointer;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0 1em 0 0;
+}
+
+.hidden-recuadro{
+    background-color: rgba(42, 42, 42, 0.940);
+    border-radius: 10px;
+    box-shadow: -2px -1px 13px 4px rgb(255 153 0 / 75%);
+}
+
+.box-p{
+    color: #FF9900;
+    font-size: small;
     font-weight: 500;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    padding: 0 1.2em;
-    width: 19em;
-    text-align: center;
+    padding: 1em 1.3em !important;
+    text-align: left !important;
 }
 
 
@@ -87,30 +164,73 @@ main{
     margin-top: 4em;
 }
 
-.flex-trabajos{
+#misProyectos{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
 }
 
-.flex-trabajos img{
-    width: 87vw;
-    height: 34vh;
-    margin: 1em;
-    border: 2px solid #ff9900;
-    border-radius: 15px;
+.flex-proyectos img:hover{
+    transform: scale(1.5); 
 }
+
+.flex-proyectos img {
+    width: 100%;
+    max-width: max-content;
+    height: 27vw;
+    transition: transform .7s;
+    margin: 0 auto; 
+    border: 1px solid #ff9900;
+    z-index: 1;
+}
+
+.flex-proyectos{
+    display: flex;
+    justify-content: space-between;
+    background-image:  linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/fondo-negro2.jpg);
+    overflow: overlay;
+    margin: 0 1em 0;
+}
+
+.fondo-negro2{
+    display: flex;
+    flex-direction:column;
+    background-image: linear-gradient(rgba(255, 153, 0, 1), rgba(0, 0, 0, 1)), url(../img/fondo-negro2.jpg);
+    background-blend-mode: difference;
+    background-size: cover;
+    align-items: center;
+    width: 50%;
+    max-width: initial;
+    z-index: 2;
+}
+
+.fondo-negro2 h1 {
+    font-size: 13px;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 1em 0 1em 0;
+}
+
+.fondo-negro2 p {
+    font-size: 10px;
+    padding: 0 0.3em 0;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 
 /*************^^^SKILLS^^^*************/
 
 #Skills{
     text-align: center;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(1,0,1,0);
 }
 
-#Skills i::backdrop{
-    transition:cubic-bezier(1, 0, 0, 1)
+#Skills article{
+    transition: all .5s cubic-bezier(1,0,1,0);
 }
+
 
 .barra{
     width: 15em;
@@ -144,7 +264,7 @@ main{
 }
 
 .hidden-info{
-    display: none
+    display: none;
 }
 
 /*************^^^FORMULARIO^^^*************/
@@ -169,14 +289,8 @@ form{
     border-color: black;
 }
 
-#nombre{
-    padding: 1em;
-    margin: 1em;
-    color: white;
-}
-
-#email{
-    padding: 1em;
+form input{
+    padding: 1em 2em 1em;
     margin: 1em;
     color: white;
 }
@@ -184,8 +298,7 @@ form{
 #texto{
     padding: 1em;
     margin: 1em;
-    color: white;
-}  
+}
 
 #flex-botones{
     display: flex;
@@ -209,7 +322,21 @@ form{
 fieldset{
     border: none;
 }
+
+/*************^^^FORM-ICONS^^^*************/
+
+
+
+
 /*************^^^CONTACTO^^^*************/
+
+#Contacto{
+    background: linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/lines.jpg);
+    background-blend-mode: overlay;
+    box-shadow: -2px -1px 13px 4px rgb(255 153 0 / 75%);
+    background-size: cover;
+    margin: 0 0 6em;
+}
 
 #contacto i{
     color: #FF9900;
@@ -217,11 +344,12 @@ fieldset{
     margin: 0.2em;
 }
 
-#contacto{
+#contacto-icons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 2em 0 2em 0;
 }
 
 #contacto i:hover{
@@ -232,14 +360,45 @@ fieldset{
     font-size: 0.8em;
 }
 
-#chupetin{
-    margin-left: 0.5em !important;
-}
-
 .flex-p-contacto{
     display: flex;
     align-items: center;
+    color: #c4c4c4;
+    cursor: pointer;
+    
 }
+
+.flex-p-contacto:hover{
+    display: flex;
+    align-items: center;
+    transition: 2s;
+    animation: bounce 1.2s linear, changeColor 1.3s forwards;
+}
+
+@keyframes changeColor {
+    50%   { color: #731580; }
+    100% { color: #FF9900; }
+}
+
+
+@keyframes bounce {
+    20%,50%,80%,to{
+        -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+
+    40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    }
+
+    80% {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+    }
+    
+}
+
 /*************^^^MEDIA-QUERYS^^^*************/
 
 
@@ -254,18 +413,17 @@ fieldset{
 /*************^^^MOBILE-1^^^*************/
 
 @media (min-width: 468px){
-    #Juanse {
-    width: 14em;
-    height: 43vh;
-    }
-    #Juanse img {
-    margin-left: 0.4em;
-    }
     .flex-trabajos img {
         height: 45vh;
     }
     .flex-barras{
         justify-content: center;
+    }
+    .box-p{
+        font-size: 20px;
+    }
+    #full-stack p {
+        font-size: 1.5em !important;
     }
     /*************^^^FORM^^^*************/
     #flex-contacto{
@@ -284,17 +442,6 @@ fieldset{
     .form-medidas{
         width: 28em;
     }
-
-    .flex-trabajos img {
-        height: 42vh;
-        width: 25em;
-    }
-
-    #flex-main p {
-        width: 27em;
-        text-align: center;
-    }
-
     .fa-4x {
         font-size: 4.5em;
     }
@@ -304,7 +451,10 @@ fieldset{
     #mobile-margin{
         margin: 1em;
     }
-
+    /*************^^^PROYECTOS^^^*************/
+    .fondo-negro2 p {
+        font-size: 11px;
+    }
     /*************^^^FOOTER^^^*************/
     #flex-redes{
         width: 33% !important;
@@ -326,6 +476,12 @@ fieldset{
     #contacto p {
         font-size: 18px;
     }
+    .fondo-negro2 p {
+        font-size: 14px;
+    }
+    .fondo-negro2 h1 {
+        font-size: 1.4em;
+    }
 }
 
 
@@ -336,35 +492,18 @@ fieldset{
         flex-direction: row;
         justify-content: center;
     }
-    #Juanse img {
-        width: 19em !important;
-        height: 18em !important;
-        margin: 0 !important;
-    }
-    #Juanse{
-        width: 16em !important;
-        height: 17em !important;
-    }
-    #flex-main p {
-        width: 22em;
-        padding: 0;
-        font-size: 16px;
+    .box-p {
         margin-right: 0.4em;
-        text-align: left;
     }
     #misProyectos{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
     }
     .flex-trabajos img {
         width: 20em;
         height: 13em;
         object-fit: initial;
-    }
-    #flex-contacto {
-        flex-direction: row;
     }
     #contacto {
         flex-direction: column;
@@ -375,21 +514,20 @@ fieldset{
     .flex-p-contacto{
         justify-content: flex-start;
     }
+    .fondo-negro2 h1 {
+        font-size:2em;
+    }
+    .fondo-negro2 p {
+        font-size: 1.1em; 
+    }
 }
 
 /*************^^^TABLET^^^*************/
 
 @media (min-width: 900px) {
-    #Juanse img {
-        width: 19em;
-        height: 18em;
-    }
-    #flex-main p {
+    
+    .box-p {
         font-size: 18px;
-    }
-    #Juanse {
-        height: 18em !important;
-        width: 17em !important;
     }
     .flex-trabajos img {
         width: 23em;
@@ -401,10 +539,6 @@ fieldset{
         width: 4.5em;
         margin-top: 0.3em;
     }
-    #flex-main {
-        justify-content: space-evenly;
-    }   
-    
     #flex-contacto {
         justify-content: center;
     }
@@ -417,35 +551,16 @@ fieldset{
 
 
 @media (min-width: 1000px){
-    #flex-main p {
+    .box-p {
         font-size: 20px;
     }
-    #Juanse {
-        height: 44vh;
-        width: 18em;
-    }
-    #Juanse img {
-        width: 19em;
-        height: 18em;
-    }
+
 }
 
 @media (min-width: 1300px){
-    #Juanse {
-        height: 23em !important;
-        width: 22em !important;
-        margin: 0 !important;
-    }
-    #Juanse img {
-        width: 22em;
-        height: 22em;
-        margin: 1em 0 2em 1.5em !important;
-    }
-    #flex-main p {
-        font-size: 25px;
-    }
-    #flex-main{
-        justify-content: space-evenly;
+
+    .box-p{
+        font-size: 30px;
     }
     .form-medidas {
         width: 36em;
@@ -462,19 +577,9 @@ fieldset{
 /*************^^^HEIGHT^^^*************/
 
 
-@media(min-height: 600px){
-    #Juanse {
-        width: 14em;
-        height: 40vh;
-    }
-}
 
 @media(min-height: 700px){
-    #Juanse{
-        height: 35vh;
-        margin: 0 0 0 0.2em;
-    }
-    #flex-main p{
+    .box-p{
         margin: 1em 0 0 0;
     }
     .flex-trabajos img {
@@ -485,17 +590,9 @@ fieldset{
     }
 }
 
-@media(min-height: 800px){
-    #Juanse {
-        height: 31vh;
-    }
-}
+
 
 @media (min-height: 1000px){
-    #Juanse {
-        width: 14em;
-        height: 23vh;
-    }
     .flex-trabajos img {
         height: 23vh;
     }
