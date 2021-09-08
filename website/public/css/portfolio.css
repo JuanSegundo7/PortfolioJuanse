@@ -600,6 +600,19 @@ fieldset{
     }
 }
 
+@media (min-width: 1400px){
+    .form-medidas {
+        width: 39em;
+    }
+    #flex-botones button {
+        width: 14em;
+        padding: 0.7em 1em;
+    }
+    #texto {
+        width: 80em;
+    }
+}
+
 /*************^^^HEIGHT^^^*************/
 
 
