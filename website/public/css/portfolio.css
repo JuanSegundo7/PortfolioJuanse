@@ -117,7 +117,6 @@ main{
     justify-content: flex-end;
     align-items: center;
     color: #FF9900;
-    
 }
 
 .h1-cross{
@@ -189,6 +188,7 @@ main{
     justify-content: space-between;
     background-image:  linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/fondo-negro2.jpg);
     overflow: overlay;
+    box-shadow: -2px -1px 13px 3px rgb(255 153 0 / 75%);
     margin: 0 1em 0;
 }
 
@@ -281,6 +281,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1em 0;
 }
 
 .form-style{
@@ -302,7 +303,7 @@ form input{
 
 #flex-botones{
     display: flex;
-    
+    margin: 0.5em 0;
 }
 
 #flex-botones button{
@@ -406,7 +407,7 @@ fieldset{
 
 @media (min-width: 390px){
     .form-medidas{
-        width: 26em;
+        width: 100%;
     }
     
 }
@@ -440,7 +441,7 @@ fieldset{
         margin: 0.5em 0 0.5em 0;
     }
     .form-medidas{
-        width: 28em;
+        width: 100%;
     }
     .fa-4x {
         font-size: 4.5em;
@@ -484,6 +485,25 @@ fieldset{
     }
 }
 
+@media (min-width: 700px){
+    form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .form-medidas {
+        width: 24em;
+    }
+    #texto {
+        width: 50em;
+    }
+    #flex-botones button {
+        width: 11em;
+    }
+}
 
 /*************^^^TABLET^^^*************/
 
@@ -554,6 +574,12 @@ fieldset{
     .box-p {
         font-size: 20px;
     }
+    #texto {
+        width: 60em;
+    }
+    .form-medidas{
+        width: 29em;
+    }
 
 }
 
@@ -563,7 +589,7 @@ fieldset{
         font-size: 30px;
     }
     .form-medidas {
-        width: 36em;
+        width: 100%;
     }
     #flex-botones button{
         width: 8em;
