@@ -589,7 +589,7 @@ fieldset{
         font-size: 30px;
     }
     .form-medidas {
-        width: 100%;
+        width: 31em;
     }
     #flex-botones button{
         width: 8em;
@@ -610,6 +610,9 @@ fieldset{
     }
     #texto {
         width: 80em;
+    }
+    .flex-proyectos{
+        margin: 0 3em 0;
     }
 }
 
