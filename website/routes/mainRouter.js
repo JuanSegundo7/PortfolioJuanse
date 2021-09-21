@@ -8,4 +8,6 @@ const main = require("../controllers/mainController");
 
 router.get("/", main.index);
 
+router.get("/curriculumVitae.pdf", main.curriculum);
+
 module.exports = router;

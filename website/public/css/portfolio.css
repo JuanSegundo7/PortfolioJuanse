@@ -18,7 +18,6 @@
 
 /**************************************^^^BODY^^^********************************************/
 
-
 body{
     color: white;
     display: flex;
@@ -79,10 +78,28 @@ main{
 }
 
 
-
+#full-stack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #full-stack p{
     font-size: 1.2em !important;
+}
+
+#full-stack a{
+    font-size: 1em;
+    padding: 1em;
+    background: linear-gradient(rgb(119, 53, 149), rgb(53, 16, 34)),url(../img/buttonLines.jpg);
+    background-blend-mode: darken;
+    color: #FF9900;
+    text-decoration: none;
+    box-shadow: -2px -1px 13px 4px rgb(255 153 0 / 75%);
+    background-size: cover;
+    border-radius: 10px;
+
+    border: 1px solid black;
 }
 
 .hidden-p{
@@ -189,7 +206,8 @@ main{
     background-image:  linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/fondo-negro2.jpg);
     overflow: overlay;
     box-shadow: -1px 2px 13px 3px rgb(255 153 0 / 75%);
-    margin: 0 1em 0;
+    margin: 1em 0;
+    border-radius: 20px;
 }
 
 .flex-proyectos a{
@@ -518,6 +536,9 @@ fieldset{
     #recuadro-skills p {
         font-size: 24px;
     }
+    .hidden-recuadro{
+        margin: 0em 1em;
+    }
 }
 
 @media (min-width: 650px){
@@ -597,6 +618,9 @@ fieldset{
     #recuadro-skills p {
         font-size: 30px;
     }
+    .hidden-recuadro{
+        margin: 0em 2em;
+    }
 }
 
 /*************^^^TABLET^^^*************/
@@ -622,6 +646,9 @@ fieldset{
     #contacto {
         width:40%;
     }
+    .hidden-recuadro{
+        margin: 0em 1em;
+    }
 }
 
 /*************^^^DESKTOP^^^*************/
@@ -643,7 +670,7 @@ fieldset{
 @media (min-width: 1300px){
 
     .box-p{
-        font-size: 40px;
+        font-size: 30px;
     }
     .flex-trabajos img {
         height: 32vh;

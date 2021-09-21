@@ -18,6 +18,10 @@
 	box-sizing: border-box;
 }
 
+.trasition-fade{
+    transition: .5s;
+    transform: translateY(0%);
+}
 
 header {
 	display: flex;
@@ -59,6 +63,19 @@ header #flex-nav-items{
     padding-bottom: 1em;
     align-items: center;
     justify-content: flex-end;
+}
+
+.fa-fighter-jet{
+	filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+  	-webkit-transform: rotate(60deg);
+  	-moz-transform: rotate(60deg);
+  	-ms-transform: rotate(60deg);
+  	-o-transform: rotate(60deg);
+  	transform: rotate(60deg);
+  	display: inline-block;
+	font-size: 1.5em;
+	margin: 0 0.5em 0 0;
+	cursor: pointer;
 }
 
 #flex-nav-items a{
