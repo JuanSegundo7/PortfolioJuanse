@@ -88,9 +88,10 @@ main{
     font-size: 1.2em !important;
 }
 
-#full-stack a{
+#descarga{
     font-size: 1em;
     padding: 1em;
+    margin: 0.5em;
     background: linear-gradient(rgb(119, 53, 149), rgb(53, 16, 34)),url(../img/buttonLines.jpg);
     background-blend-mode: darken;
     color: #FF9900;
@@ -98,8 +99,25 @@ main{
     box-shadow: -2px -1px 13px 4px rgb(255 153 0 / 75%);
     background-size: cover;
     border-radius: 10px;
-
     border: 1px solid black;
+}
+
+#flex-redes-portfolio{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    margin: 1em 0 0 0;
+}
+
+#flex-redes-portfolio i{
+    color: #ff9900;
+    font-size: 2em;
+    transition: color .5s;
+}
+
+#flex-redes-portfolio i:hover{
+    color: #ff990067;
 }
 
 .hidden-p{
@@ -160,7 +178,7 @@ main{
     font-size: small;
     font-weight: 500;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    padding: 1em 1.3em !important;
+    padding: 0.7em !important;
     text-align: left !important;
 }
 
@@ -223,7 +241,7 @@ main{
     background-blend-mode: difference;
     background-size: cover;
     align-items: center;
-    width: 53%;
+    width: 53.5%;
     max-width: 53%;
     z-index: 2;
 }
@@ -476,7 +494,7 @@ fieldset{
         justify-content: center;
     }
     .box-p{
-        font-size: 20px;
+        font-size: 15px;
     }
     #full-stack p {
         font-size: 1.5em !important;
@@ -539,6 +557,13 @@ fieldset{
     .hidden-recuadro{
         margin: 0em 1em;
     }
+    #flex-redes-portfolio i{
+        font-size: 2.5em;
+    }
+    #flex-redes-portfolio{
+        width: 75%;
+    }
+
 }
 
 @media (min-width: 650px){
@@ -621,6 +646,9 @@ fieldset{
     .hidden-recuadro{
         margin: 0em 2em;
     }
+    #flex-redes-portfolio i{
+        font-size: 3em;
+    }
 }
 
 /*************^^^TABLET^^^*************/
@@ -687,6 +715,9 @@ fieldset{
         width: 12em;
         padding: 0.7em 1em;
     }
+    .fondo-negro2{
+        width: 52%;
+    }
 }
 
 @media (min-width: 1400px){
@@ -731,5 +762,8 @@ fieldset{
         margin: 1em 0 1em 0;
     }
 }
+
+
+
 
 
