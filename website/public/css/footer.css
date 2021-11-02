@@ -24,7 +24,7 @@ footer {
 	display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 2em 0 0;
+    padding: 0 0 2em 0;
 	height: 20vh;
     font-family: "Montserrat";
     background: linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/lines.jpg);
