@@ -1,0 +1,5 @@
+<script>
+    const skillsTitle = document.querySelector("#Skills h3")
+    const skillsItems = Array.from(document.querySelectorAll("#Skills .hidden-info"))
+    skillsTitle.onclick = () => skillsItems.forEach(skill => skill.classList.toggle("hidden-info"))
+</script>

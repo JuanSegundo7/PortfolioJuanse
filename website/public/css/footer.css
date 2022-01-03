@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Colores */
+/*  Azul Oscuro: #031927
+    Dorado: #FF9900
+    Color Crema: #FFF3DD
+    Blanco: #FFFFFF 
+*/
+/************************************^^HEADER^^^********************************************/
+* {
+	font-family: "Montserrat";
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+footer {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 2em 0;
+	height: 20vh;
+    font-family: "Montserrat";
+    background: linear-gradient(rgba(255, 153, 0, 1), rgba(255, 153, 0, 1)),url(../img/lines.jpg);
+    background-blend-mode: overlay;
+    box-shadow: -2px -1px 13px 4px rgb(255 153 0 / 75%);
+    background-size: cover;
+}
+
+
+footer nav{
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer img {
+	max-height: 100%;
+	width: 4em;
+    padding-top: 2vh;
+    margin-left: 0.3em;
+}
+
+#logo{
+    filter: brightness(1.1);
+    mix-blend-mode: screen;
+}
+
+#flex-footer{
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#flex-redes{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    margin: 1em 1em 0 0;
+}
+
+#flex-redes i{
+    color: #ff9900;
+    transition: color .5s;
+}
+
+#flex-redes i:hover{
+    color: #ff990067;
+}
+
+
+
+/*************^^^MEDIA-QUERYS^^^*************/
+
+@media (min-width: 468px){
+    .flex-nav-items {
+    font-size: 1.2em;
+    padding-bottom: 2em;
+    }
+    #flex-redes i {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 768px){
+    #flex-redes {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: 1000px){}
+
+@media (min-width: 2000px){}

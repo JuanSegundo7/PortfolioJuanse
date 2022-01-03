@@ -1,0 +1,24 @@
+<script>
+
+    /*************^^^CONST^^^*************/
+    const ubicacion = document.querySelector(".fa-map-pin")
+    const email = document.querySelector(".fa-inbox")
+    const juanse = document.querySelector("#Juanse")
+    const pOculta = document.querySelector(".hidden-p")
+    const ubicOculto = document.querySelector(".hidden-u")
+    const emailOculto = document.querySelector(".hidden-e")
+    const cross = document.querySelector(".fa-times-circle")
+    const crossE = document.querySelector(".cross-e")
+    const crossU = document.querySelector(".cross-u")
+
+    
+    /*************^^^FUNCTIONS^^^*************/
+    juanse.onclick = () => pOculta.classList.remove("hidden-p") + pOculta.classList.add("recuadro-p")
+    email.onclick = () => emailOculto.classList.remove("hidden-e") +emailOculto.classList.add("recuadro-p")
+    ubicacion.onclick = () => ubicOculto.classList.remove("hidden-u") + ubicOculto.classList.add("recuadro-p")
+    cross.onclick = () => pOculta.classList.remove("recuadro-p") + pOculta.classList.add("hidden-p")
+    crossU.onclick = () => ubicOculto.classList.remove("recuadro-p") + ubicOculto.classList.add("hidden-u")
+    crossE.onclick = () => emailOculto.classList.remove("recuadro-p") + emailOculto.classList.add("hidden-e")
+
+
+</script>
