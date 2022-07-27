@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include("./partials/head",{"css":["header", "portfolio", "footer"]})%>
+
+<body>
+    <%-include("./partials/header")%> 
+    <main>
+        <section>
+            <h3 class="titulo" id="mobile-margin">Juan Segundo Martínez</h3>
+        </section>
+        <a name="AcercaDe"></a>
+        <section id="flex-main">
+            <figure id="Juanse">
+                <img src="/img/Juanse-sinFondo.png" alt="">
+            </figure>
+            <article id="full-stack">
+                <p class="box-p">Full Stack Developer</p>
+                <a href="../../curriculumVitae.pdf" id="descarga">Descargar Curriculum</a>
+                <article id="flex-redes-portfolio">
+                    <article>
+                        <a href="https://www.linkedin.com/in/juan-segundo-mart%C3%ADnez/"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </article>
+                    <article>
+                        <a href="https://github.com/JuanSegundo7"><i class="fab fa-github-square fa-2x"></i></a>
+                    </article>
+                    <article>
+                        <a href="https://www.instagram.com/juanse_martinez7/"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </article>
+                </article>
+            </article>
+            <article class="hidden-p">
+                <article class="hidden-recuadro">
+                    <i class="fas fa-times-circle flex-cross"></i>
+                    <h1 class="flex-cross h1-cross">Mi Camino</h1>
+                    <p class="box-p">En 2020, realicé un curso introductorio sobre lenguaje HTML y CSS en Plataforma 5, mi idea era seguir capacitando me realizando algún curso Full-Stack, sin embargo llegó la pandemia y por un año (mas o menos) no realice avances. Sin embargo, en 2021, retome el camino realizando el curso de Full-Stack en Digital House. Mi meta es poder seguir mejorando y eventualmente participar en proyectos para seguir aumentando mis conocimientos y perfeccionarlos.</p>
+                </article>
+            </article>
+        </section>
+        <section>
+            <a name="MisProyectos"></a>
+            <h3 class="titulo">Mis Proyectos</h3>
+            <article id="misProyectos">
+                <article class="flex-proyectos">
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                </article>
+                <article class="flex-proyectos">
+                    <article class="fondo-negro2">
+                        <h1>Tierra de Genios</h1>
+                        <p>Prototipo con React de Tierra de Genios</p>
+                    </article>
+                    <article>
+                        <figure><a href="https://react-tdg-3.herokuapp.com/"><img src="/img/TierraDeGenios-preview.png"></a></figure>
+                    </article>
+                </article>
+                <article class="flex-proyectos">
+                    <article class="fondo-negro2">
+                        <h1>Colombus Music</h1>
+                        <p>E-commerce con React & Express, Apis propias database con SQL</p>
+                    </article>
+                    <article>
+                        <figure><a href="https://instrumentoss.herokuapp.com/"><img src="/img/instrumentos-react-preview.png"></a></figure>
+                    </article>
+                </article>
+                <!-- <article class="flex-proyectos">
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                </article>
+                <article class="flex-proyectos">
+                    <article class="fondo-negro2">
+                        <h1>TechnoStarter</h1>
+                        <p>Proyecto integrador de Digital House</p>
+                    </article>
+                    <article>
+                        <figure><a href="https://github.com/JuanSegundo7/grupo_2_technoStarter"><img src="/img/TechnoStarter-preview.png"></a></figure>
+                    </article>
+                </article> -->
+            </article>
+        </section>
+        <section id="Skills">
+            <h3 class="titulo" id="flex-skills">Skills<i id="arrow-down" class="fas fa-chevron-down fa-sm"></i></h3>
+                <section id="recuadro-skills" class="hidden-info animacion-skills">
+                <article class="hidden-info">
+                    <p>HTML</p>
+                </article>
+                <article class="hidden-info">
+                    <p>CSS</p>
+                </article>
+                <article class="hidden-info">
+                    <p>JavaScript</p>
+                </article>
+                <article class="hidden-info">
+                    <p>Node.js</p>
+                </article>
+                <article class="hidden-info">
+                    <p>Express</p>
+                </article>
+                <article class="hidden-info">
+                    <p>Sequelize</p>
+                </article>
+        </section>
+    </section>
+        <section id="Contacto">
+            <a name="Contacto"></a>
+            <h3 class="titulo">Contactame</h3>
+            <article id="flex-contacto">
+                <form action="https://formspree.io/f/xrgrrpyd" method="POST">
+                <fieldset>
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" class="form-style form-medidas">
+                </fieldset>
+                <fieldset>
+                    <label for="number"></label>
+                    <input type="number" name="number" id="number" placeholder="Telefono" class="form-style form-medidas">
+                </fieldset>
+                <fieldset>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo electronico" class="form-style form-medidas">
+                </fieldset>
+                <fieldset>
+                    <label for="proyecto"></label>
+                    <input type="text" name="proyecto" id="proyecto" placeholder="Nombre del proyecto o Empresa" class="form-style form-medidas">
+                </fieldset>
+                <fieldset>
+                    <label for="texto"></label>
+                    <textarea cols="30" rows="20" name="texto" id="texto" placeholder="Hola! Me gustaria..." class="form-style form-medidas"></textarea>
+                </fieldset>
+                <fieldset id="flex-botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetear</button>
+                </fieldset>
+            </form>
+                <article id="contacto-icons">
+                    <a href="http://wa.me/542213615252" class="disabled-link"><i class="fab fa-whatsapp fa-3x  flex-p-contacto"></i></a>
+                    <i class="fas fa-map-pin fa-3x flex-p-contacto" ></i>        
+                    <article class="hidden-u">
+                        <article class="hidden-recuadro">
+                                <i class="fas fa-times-circle flex-cross cross-u"></i>
+                                <h1 class="flex-cross h1-cross">Ubicación</h1>
+                                <p class="box-p">La Plata, Buenos Aires. AR</p>
+                        </article>
+                    </article>               
+                    <i class="fas fa-inbox fa-3x flex-p-contacto" ></i>
+                    <article class="hidden-e">
+                        <article class="hidden-recuadro">
+                                <i class="fas fa-times-circle flex-cross cross-e"></i>
+                                <h1 class="flex-cross h1-cross">Email</h1>
+                                <p class="box-p">juansegundomartinez7@gmail.com</p>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+    <%- include("./partials/scripts/scrollDown")%> 
+    <%- include("./partials/scripts/juanse-info")%> 
+    <%- include("./partials/scripts/skills")%> 
+    <%- include("./partials/footer")%> 
+</body>
+</html>
